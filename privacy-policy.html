@@ -33,7 +33,7 @@
         <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy-policy.html">Privacy Policy</a></nav>
         <header>
             <h1>🇮🇹 ItalyDocsHelper Privacy Policy</h1>
-            <p class="effective-date">Effective Date: October 7, 2026</p>
+            <p class="effective-date">Effective Date: October 24, 2026</p>
         </header>
 
         <div class="highlight-box">
@@ -60,7 +60,7 @@
                 <li><strong>Your form answers</strong> (for example name, date of birth, address, codice fiscale, passport and permit details) for the Permesso di Soggiorno kit and the other forms.</li>
                 <li><strong>The PDFs you generate.</strong> They are saved in the app's storage on your device and stay there until you delete them or uninstall the app. On iPhone they also appear in the Files app.</li>
                 <li><strong>Text recognition (OCR)</strong> of photos you take or import, done with Google ML Kit models that run on the device. Photos are not uploaded for OCR.</li>
-                <li><strong>Your settings</strong>, the assistant chat history and its daily usage counter.</li>
+                <li><strong>Your settings</strong>, the assistant chat history, your assistant permission choice and its daily usage counter.</li>
             </ul>
             <p>We do not upload, store or back up your documents, scans, photos, form answers or PDFs on any server we control. They are shared only when you choose to share them, for example through the system share sheet.</p>
         </section>
@@ -70,7 +70,7 @@
             <p>Some features cannot work on the device alone. When you use one of them, the data below is sent over an encrypted connection.</p>
             <table>
                 <tr><th>Feature</th><th>What is sent</th><th>To whom</th></tr>
-                <tr><td>AI Assistant (Android and iPhone)</td><td>The question you type and the last messages of that chat</td><td>OpenRouter, Inc. (USA), which passes it to an AI model provider</td></tr>
+                <tr><td>AI Assistant (Android and iPhone), <strong>only after you tap Allow</strong></td><td>The question you type, your previous question and answer in that chat, and public text from official websites used to write the answer</td><td>OpenRouter, Inc. (USA), a third-party AI service, which passes it to the company running the AI model. The app asks OpenRouter to use only companies that do not store it or train on it.</td></tr>
                 <tr><td>Translate Document (Android only)</td><td>The recognised text of the document, not the photo</td><td>Google (Gemini, with Google Translate as backup)</td></tr>
                 <tr><td>Scan Form / ID or passport scan (Android only)</td><td>The recognised text, not the photo</td><td>Google Gemini</td></tr>
                 <tr><td>Usage statistics and crash reports</td><td>Anonymous events and crash data (see section 6)</td><td>Google Firebase</td></tr>
@@ -78,10 +78,13 @@
 
             <h3>a. The AI Assistant</h3>
             <ul>
-                <li><strong>The app asks for your permission first.</strong> Before your first question is sent, a dialog explains what is sent and to whom. Nothing is sent unless you tap Allow, and you can take the permission back at any time with the shield button on the assistant screen.</li>
-                <li>Before sending, the app removes things that look like a codice fiscale, a document number, a phone number or an e-mail address. You should still not type personal data into the assistant.</li>
-                <li>The assistant uses free AI models. Some of their providers may keep what you type to improve their models, as described in <a href="https://openrouter.ai/privacy">OpenRouter's privacy policy</a>.</li>
-                <li>Your form answers and PDFs are never sent to the assistant.</li>
+                <li><strong>What is sent:</strong> the question you type, your previous question and the assistant's previous answer in the same chat, and public text from official Italian websites that the app uses to write the answer. Before sending, the app removes things that look like a codice fiscale, a document number, a phone number or an e-mail address. You should still not type personal data into the assistant.</li>
+                <li><strong>What is never sent:</strong> your form answers, your saved PDFs and your photos.</li>
+                <li><strong>Who receives it:</strong> OpenRouter, Inc. (USA), a third-party AI service, which passes it to the company running the AI model that writes the answer. The app asks OpenRouter to route the question only to companies that do not store it or use it to train their models (OpenRouter's <code>data_collection: deny</code> setting). See <a href="https://openrouter.ai/privacy">OpenRouter's privacy policy</a>.</li>
+                <li><strong>How it is collected:</strong> only when you type or tap a question in the assistant and send it.</li>
+                <li><strong>How it is used:</strong> only to write the answer you asked for. We do not store your questions on any server, do not sell them, and do not use them for advertising or profiling.</li>
+                <li><strong>Your permission comes first.</strong> When you open the assistant, a dialog explains what is sent and to whom. Nothing is sent unless you tap Allow. You can take the permission back at any time with the shield button on the assistant screen; the app then asks again before sending anything. If no AI service is available, the assistant answers from notes stored in the app and sends nothing.</li>
+                <li><strong>Equal protection:</strong> we share assistant questions only with OpenRouter, which handles them under its privacy policy and terms with protection equal to that described here, and the app allows only model providers that do not retain or train on them.</li>
                 <li>To check its answers, the app also downloads public pages from official websites (for example portaleimmigrazione.it, poliziadistato.it, agenziaentrate.gov.it). Those requests contain no information about you.</li>
             </ul>
 
@@ -106,7 +109,7 @@
             <h2>7. Data Retention</h2>
             <ul>
                 <li><strong>Form answers and PDFs:</strong> kept on your device until you delete them or uninstall the app. Never stored by us.</li>
-                <li><strong>Assistant questions:</strong> not stored by us. The chat history stays on your device and you can clear it on the assistant screen. Retention by OpenRouter and the model providers follows their own policies.</li>
+                <li><strong>Assistant questions:</strong> not stored by us. The chat history stays on your device and you can clear it on the assistant screen. The app asks OpenRouter to use only model providers that do not retain your questions; OpenRouter's own handling follows its privacy policy.</li>
                 <li><strong>Text sent to Google for translation or scanning:</strong> not retained by us; returned to you and discarded.</li>
                 <li><strong>Analytics:</strong> kept by Firebase for up to 14 months.</li>
             </ul>
@@ -158,7 +161,7 @@
 
         <footer>
             <p>© 2026 ItalyDocsHelper by SADEVELOPERS. All rights reserved.</p>
-            <p>Last updated: October 7, 2026</p>
+            <p>Last updated: October 24, 2026</p>
         </footer>
     </div>
 </body>
